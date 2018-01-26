@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/backlayout">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:text="@string/flood_em_all"
+        android:textAlignment="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Title"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="casual"
+        android:text="@string/please_choose_your_board"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        />
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:visibility="gone"
+        android:layout_width="400dp"
+        android:layout_height="350dp"
+        android:layout_alignRight="@id/Choice"
+        android:layout_alignEnd="@id/Choice"
+        android:layout_below="@id/Choice">
+
+        <TextView
+            android:id="@+id/best"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/best"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/S1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/best"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/M1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/S1"
+            android:paddingTop="30dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/L1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/M1"
+            android:paddingTop="30dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout22"
+        android:visibility="gone"
+        android:layout_width="400dp"
+        android:layout_height="350dp"
+        android:layout_alignRight="@id/Choice"
+        android:layout_alignEnd="@id/Choice"
+        android:layout_below="@id/Choice">
+
+        <TextView
+            android:id="@+id/best2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/best"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/S21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/best2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/M21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/S21"
+            android:paddingTop="30dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/L21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/M21"
+            android:paddingTop="30dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout33"
+        android:visibility="gone"
+        android:layout_width="400dp"
+        android:layout_height="350dp"
+        android:layout_alignRight="@id/Choice"
+        android:layout_alignEnd="@id/Choice"
+        android:layout_below="@id/Choice">
+
+        <TextView
+            android:id="@+id/best3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/best"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/S31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/best3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/M31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/S31"
+            android:paddingTop="30dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/L31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/M31"
+            android:paddingTop="30dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout44"
+        android:visibility="gone"
+        android:layout_width="400dp"
+        android:layout_height="350dp"
+        android:layout_alignRight="@id/Choice"
+        android:layout_alignEnd="@id/Choice"
+        android:layout_below="@id/Choice">
+
+        <TextView
+            android:id="@+id/best4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/best"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/S41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/best4"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/M41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/S41"
+            android:paddingTop="30dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/L41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/M41"
+            android:paddingTop="30dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/returnToM"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:text="@string/menu"
+        android:layout_below="@+id/Title"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:background="@drawable/btnmenu"/>
+
+    <Button
+        android:id="@+id/small"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/S"
+        android:layout_centerHorizontal="true"
+        android:text="@string/_10_x_10"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:background="@drawable/btnmenu1"/>
+
+    <Button
+        android:id="@+id/medium"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/M"
+        android:layout_centerHorizontal="true"
+        android:text="@string/_20_x_20"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:background="@drawable/btnmenu1"/>
+
+    <Button
+        android:id="@+id/large"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/L"
+        android:layout_centerHorizontal="true"
+        android:text="@string/_40_x_40"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:background="@drawable/btnmenu1"/>
+
+    <TextView
+        android:id="@+id/S"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Choice"
+        android:layout_centerHorizontal="true"
+        android:text="@string/small"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/M"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/small"
+        android:layout_centerHorizontal="true"
+        android:text="@string/medium"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/L"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/medium"
+        android:layout_centerHorizontal="true"
+        android:text="@string/large"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/modeSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mode_selection"
+        android:textSize="20sp"
+        android:layout_below="@+id/large"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#FFF"/>
+
+    <RadioGroup
+        android:id="@+id/mode1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/modeSelection"
+        >
+
+        <RadioButton
+            android:id="@+id/OrthoPlane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/orthoplane"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/OrthoTorus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/orthotorus"
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:id="@+id/DiagoPlane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/diagoplane"
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:id="@+id/DiagoTorus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/diagotorus"
+            android:textStyle="bold"/>
+
+    </RadioGroup>
+
+
+</RelativeLayout>

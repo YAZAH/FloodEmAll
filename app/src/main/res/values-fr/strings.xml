@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">"Flood'Em All"</string>
+    <string name="undo">Undo</string>
+    <string name="redo">Redo</string>
+    <string name="options">Options</string>
+    <string name="menu">Menu</string>
+    <string name="hideMenu">Cacher</string>
+    <string name="reset">Nouvelle partie</string>
+    <string name="start">Vous commencez\nen haut à gauche!</string>
+    <string name="returnB">Retourner au menu principal</string>
+    <string name="back">Retour</string>
+    <string name="instructions1">"Le but du jeu est de remplir la grille avec les sphères de la même couleur, c\'est simple!
+    Pour capturer une sphère, il suffit de cliquer sur sa couleur parmi le panel proposé en bas."</string>
+    <string name="instructions">"<s>OrthoPlane</s> est le mode par défaut, vous ne pourrez capturer que les sphères adjascentes sans dépasser les limites.\n
+        <s>DiagoPlane</s> vous permet de capturer les sphères en diagonal aussi, mais sans dépasser les limites.\n
+        <s>OrthoTorus</s> enlève les limites de la grille, mais vous ne pouvez pas capturer les sphères en diagonal.\n
+        <s>DiagoTorus</s> vous permet de capturer les sphères en diagonal ET sans limite aux bords."
+    </string>
+    <string name="youlost">Perdu!\nVous avez dépassé la limite des coups</string>
+    <string name="youwon1">"Félicitations! Vous avez gagné en "</string>
+    <string name="youwon2">" coups!\n Voulez-vous battre votre record?"</string>
+    <string name="youWon">Gagné!\nChoississez un autre level</string>
+    <string name="_10_x_10">10 X 10</string>
+    <string name="_20_x_20">20 X 20</string>
+    <string name="_40_x_40">40 X 40</string>
+    <string name="diagoplane">DiagoPlane</string>
+    <string name="diagotorus">DiagoTorus</string>
+    <string name="orthoplane">OrthoPlane</string>
+    <string name="orthotorus">OrthoTorus</string>
+    <string name="large">Large</string>
+    <string name="medium">Moyenne</string>
+    <string name="mode_selection">Mode selection</string>
+    <string name="flood_em_all">FLOOD\'EM ALL!</string>
+    <string name="please_choose_your_board">Choississez votre grille!</string>
+    <string name="small">Petite</string>
+    <string name="_2">2</string>
+    <string name="_1">1</string>
+    <string name="_10">10</string>
+    <string name="_9">9</string>
+    <string name="_8">8</string>
+    <string name="_7">7</string>
+    <string name="_6">6</string>
+    <string name="_5">5</string>
+    <string name="_4">4</string>
+    <string name="_3">3</string>
+    <string name="large_board_40x40">Grille large (40x40)</string>
+    <string name="medium_board_20x20">Grille moyenne (20x20)</string>
+    <string name="small_board_10x10">Petite grille (10x10)</string>
+    <string name="please_select_your_level">Choississez votre level</string>
+    <string name="hey">Hey! Merci de jouer à Flood\'em all! Que voulez-vous faire aujourd\'hui?</string>
+    <string name="random_game">Mode aléatoire</string>
+    <string name="level_game">Mode level</string>
+    <string name="instruc">Instructions</string>
+    <string name="quit">Quitter</string>
+    <string name="replay">Rejouer</string>
+    <string name="numstep">"Nombre de coups: "</string>
+    <string name="step">" coups!"</string>
+    <string name="banner_id">"test"</string>
+    <string name="showad">"Gagnez un coup supplémentaire en regardant une vidéo publicitaire!"</string>
+    <string name="retry">Réessayer</string>
+    <string name="level_selection">Selection de level</string>
+    <string name="grid_selection">Selection de grille</string>
+    <string name="selection_menu">Menu de selection</string>
+    <string name="best">Best</string>
+    <string name="discover">Découvrez Bloxorz !</string>
+    <string name="rate">Noter Flood\'em All !</string>
+</resources>

@@ -1,0 +1,1520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/backlayout">
+    <Button
+        android:id="@+id/returnToMenu"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:text="@string/menu"
+        android:layout_below="@+id/FloodemAll"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:onClick="onButtonClick"
+        android:background="@drawable/btnmenu"/>
+
+    <TextView
+        android:id="@+id/FloodemAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:text="@string/flood_em_all"
+        android:textAlignment="center"
+        android:textSize="38sp"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/LevelSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FloodemAll"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="casual"
+        android:text="@string/please_select_your_level"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFF" />
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:visibility="gone"
+        android:layout_width="220dp"
+        android:layout_height="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/LevelSelection"
+        android:background="@drawable/layout1">
+
+        <TextView
+            android:id="@+id/SB10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/small_board_10x10"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/SB10"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Level1S"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_1"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel" />
+
+            <Button
+                android:id="@+id/Level2S"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_2"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel" />
+
+            <Button
+                android:id="@+id/Level3S"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_3"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"/>
+
+            <Button
+                android:id="@+id/Level4S"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_4"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel" />
+
+            <Button
+                android:id="@+id/Level5S"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_5"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/SB10"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Level6S"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_6"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel" />
+
+            <Button
+                android:id="@+id/Level7S"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_7"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel" />
+
+            <Button
+                android:id="@+id/Level8S"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_8"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"/>
+
+            <Button
+                android:id="@+id/Level9S"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_9"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel" />
+
+            <Button
+                android:id="@+id/Level10S"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_10"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/MB20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SB10"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:text="@string/medium_board_20x20"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/MB20"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Level1M"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_1"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel" />
+
+            <Button
+                android:id="@+id/Level2M"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_2"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"/>
+
+            <Button
+                android:id="@+id/Level3M"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_3"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel" />
+
+            <Button
+                android:id="@+id/Level4M"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_4"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"/>
+
+            <Button
+                android:id="@+id/Level5M"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_5"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/MB20"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Level6M"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_6"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel" />
+
+            <Button
+                android:id="@+id/Level7M"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_7"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel" />
+
+            <Button
+                android:id="@+id/Level8M"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_8"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel" />
+
+            <Button
+                android:id="@+id/Level9M"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_9"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel" />
+
+            <Button
+                android:id="@+id/Level10M"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_10"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/LB40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MB20"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:text="@string/large_board_40x40"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/LB40"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Level1L"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_1"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel" />
+
+            <Button
+                android:id="@+id/Level2L"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_2"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel" />
+
+            <Button
+                android:id="@+id/Level3L"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_3"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel" />
+
+            <Button
+                android:id="@+id/Level4L"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_4"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel" />
+
+            <Button
+                android:id="@+id/Level5L"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_5"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/LB40"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Level6L"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_6"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel" />
+
+            <Button
+                android:id="@+id/Level7L"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_7"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"/>
+
+            <Button
+                android:id="@+id/Level8L"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_8"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel" />
+
+            <Button
+                android:id="@+id/Level9L"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_9"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"/>
+
+            <Button
+                android:id="@+id/Level10L"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_10"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:visibility="gone"
+        android:layout_width="220dp"
+        android:layout_height="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/LevelSelection"
+        android:background="@drawable/layout2">
+
+        <TextView
+            android:id="@+id/SB10deux"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/small_board_10x10"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/SB10deux"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Level1Sdeux"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_1"
+                android:background="@drawable/btnlevel" />
+
+            <Button
+                android:id="@+id/Level2Sdeux"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_2"
+                android:background="@drawable/btnlevel"/>
+
+            <Button
+                android:id="@+id/Level3Sdeux"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_3"
+                android:background="@drawable/btnlevel"/>
+
+            <Button
+                android:id="@+id/Level4Sdeux"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_4"
+                android:background="@drawable/btnlevel"/>
+
+            <Button
+                android:id="@+id/Level5Sdeux"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_5"
+                android:background="@drawable/btnlevel"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/SB10deux"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Level6Sdeux"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_6"
+                android:background="@drawable/btnlevel" />
+
+            <Button
+                android:id="@+id/Level7Sdeux"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_7"
+                android:background="@drawable/btnlevel" />
+
+            <Button
+                android:id="@+id/Level8Sdeux"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_8"
+                android:background="@drawable/btnlevel" />
+
+            <Button
+                android:id="@+id/Level9Sdeux"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_9"
+                android:background="@drawable/btnlevel"/>
+
+            <Button
+                android:id="@+id/Level10Sdeux"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_10"
+                android:background="@drawable/btnlevel"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/MB20deux"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SB10deux"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:text="@string/medium_board_20x20"
+            android:textColor="@android:color/darker_gray"
+            
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/MB20deux"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Level1Mdeux"
+                android:layout_width="40dp"
+                android:onClick="onButtonClick"
+                android:layout_height="40dp"
+                android:text="@string/_1"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level2Mdeux"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_2"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level3Mdeux"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_3"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level4Mdeux"
+                android:layout_width="40dp"
+                android:onClick="onButtonClick"
+                android:layout_height="40dp"
+                android:text="@string/_4"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level5Mdeux"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_5"
+                android:background="@drawable/btnlevel"
+                 />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/MB20deux"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Level6Mdeux"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_6"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level7Mdeux"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_7"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level8Mdeux"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_8"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level9Mdeux"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_9"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level10Mdeux"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_10"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/LB40deux"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MB20deux"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:text="@string/large_board_40x40"
+            android:textColor="@android:color/darker_gray"
+            
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/LB40deux"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Level1Ldeux"
+                android:layout_width="40dp"
+                android:onClick="onButtonClick"
+                android:layout_height="40dp"
+                android:text="@string/_1"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level2Ldeux"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_2"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level3Ldeux"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_3"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level4Ldeux"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_4"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level5Ldeux"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_5"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/LB40deux"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Level6Ldeux"
+                android:layout_width="40dp"
+                android:onClick="onButtonClick"
+                android:layout_height="40dp"
+                android:text="@string/_6"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level7Ldeux"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_7"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level8Ldeux"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_8"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level9Ldeux"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_9"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"/>
+
+            <Button
+                android:id="@+id/Level10Ldeux"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_10"
+                android:background="@drawable/btnlevel"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout3"
+        android:visibility="gone"
+        android:layout_width="220dp"
+        android:layout_height="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/LevelSelection"
+        android:background="@drawable/layout3">
+
+        <TextView
+            android:id="@+id/SB10trois"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/small_board_10x10"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/SB10trois"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Level1Strois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_1"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level2Strois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_2"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level3Strois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_3"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level4Strois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_4"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level5Strois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_5"
+                android:background="@drawable/btnlevel"
+                 />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/SB10trois"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Level6Strois"
+                android:layout_width="40dp"
+                android:onClick="onButtonClick"
+                android:layout_height="40dp"
+                android:text="@string/_6"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level7Strois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_7"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level8Strois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_8"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level9Strois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_9"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level10Strois"
+                android:layout_width="40dp"
+                android:onClick="onButtonClick"
+                android:layout_height="40dp"
+                android:text="@string/_10"
+                android:background="@drawable/btnlevel"
+                 />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/MB20trois"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SB10trois"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:text="@string/medium_board_20x20"
+            android:textColor="@android:color/darker_gray"
+            
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/MB20trois"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Level1Mtrois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_1"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level2Mtrois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_2"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level3Mtrois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_3"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level4Mtrois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_4"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level5Mtrois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_5"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/MB20trois"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Level6Mtrois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_6"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level7Mtrois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_7"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level8Mtrois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_8"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level9Mtrois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_9"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level10Mtrois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_10"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/LB40trois"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MB20trois"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:text="@string/large_board_40x40"
+            android:textColor="@android:color/darker_gray"
+            
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/LB40trois"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Level1Ltrois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_1"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level2Ltrois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_2"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level3Ltrois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_3"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level4Ltrois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_4"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level5Ltrois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_5"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/LB40trois"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Level6Ltrois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_6"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level7Ltrois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_7"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level8Ltrois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_8"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level9Ltrois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_9"
+                android:background="@drawable/btnlevel"/>
+
+            <Button
+                android:id="@+id/Level10Ltrois"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_10"
+                android:background="@drawable/btnlevel"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout4"
+        android:visibility="gone"
+        android:layout_width="220dp"
+        android:layout_height="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/LevelSelection"
+        android:background="@drawable/layout4">
+        <TextView
+            android:id="@+id/SB10quatre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/small_board_10x10"
+            android:textColor="@android:color/darker_gray"
+            
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/SB10quatre"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Level1Squatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_1"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level2Squatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_2"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level3Squatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_3"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level4Squatre"
+                android:layout_width="40dp"
+                android:onClick="onButtonClick"
+                android:layout_height="40dp"
+                android:text="@string/_4"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level5Squatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_5"
+                android:background="@drawable/btnlevel"
+                 />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/SB10quatre"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Level6Squatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_6"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level7Squatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_7"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level8Squatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_8"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level9Squatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_9"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level10Squatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_10"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/MB20quatre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SB10quatre"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:text="@string/medium_board_20x20"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/MB20quatre"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Level1Mquatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_1"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level2Mquatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_2"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level3Mquatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_3"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level4Mquatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_4"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level5Mquatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_5"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/MB20quatre"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Level6Mquatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_6"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level7Mquatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_7"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level8Mquatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_8"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level9Mquatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_9"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level10Mquatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_10"
+                android:background="@drawable/btnlevel"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/LB40quatre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MB20quatre"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:text="@string/large_board_40x40"
+            android:textColor="@android:color/darker_gray"
+            
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/LB40quatre"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Level1Lquatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_1"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level2Lquatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_2"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level3Lquatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_3"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level4Lquatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_4"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level5Lquatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:text="@string/_5"
+                android:background="@drawable/btnlevel"
+                 />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/LB40quatre"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Level6Lquatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_6"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level7Lquatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_7"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level8Lquatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/_8"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                 />
+
+            <Button
+                android:id="@+id/Level9Lquatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btnlevel"
+                android:onClick="onButtonClick"
+                android:text="@string/_9"/>
+
+            <Button
+                android:id="@+id/Level10Lquatre"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onButtonClick"
+                android:background="@drawable/btnlevel"
+                android:text="@string/_10"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/modeSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mode_selection"
+        android:layout_below="@id/LevelSelection"
+        android:paddingTop="280dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:textSize="20sp"/>
+
+    <RadioGroup
+        android:id="@+id/mode1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/modeSelection">
+
+        <RadioButton
+            android:id="@+id/OrthoPlane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/orthoplane"
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:id="@+id/OrthoTorus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/orthotorus"
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:id="@+id/DiagoPlane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/diagoplane"
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:id="@+id/DiagoTorus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/diagotorus"
+            android:textStyle="bold"/>
+
+    </RadioGroup>
+
+
+</RelativeLayout>

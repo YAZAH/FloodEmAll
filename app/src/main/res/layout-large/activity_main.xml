@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RL"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="visible"
+    android:background="@drawable/background3"
+    tools:context="axxel.floodit.MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:baselineAligned="false"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageButton
+            android:id="@+id/blue"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/roundcorner"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/blue" />
+
+        <ImageButton
+            android:id="@+id/yellow"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/roundcorner"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/yellow" />
+
+        <ImageButton
+            android:id="@+id/red"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/roundcorner"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/red" />
+
+        <ImageButton
+            android:id="@+id/green"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/roundcorner"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/green" />
+
+        <ImageButton
+            android:id="@+id/violet"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/roundcorner"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/violet" />
+
+        <ImageButton
+            android:id="@+id/grey"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/roundcorner"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/grey" />
+
+
+    </LinearLayout>
+
+    <axxel.floodit.Slider
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/slider"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+    </axxel.floodit.Slider>
+
+    <Button
+        android:id="@+id/undo"
+        style="@android:style/Widget.Holo.Button.Borderless.Small"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/btntest"
+        android:text="@string/undo"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_above="@id/linearLayout"/>
+
+    <Button
+        android:id="@+id/redo"
+        style="@android:style/Widget.Holo.Button.Borderless.Small"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btntest"
+        android:text="@string/redo"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_above="@id/linearLayout"/>
+
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/options"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="305dp"
+        tools:layout_editor_absoluteY="3dp"
+        android:background="@drawable/btntest"/>
+
+
+    <com.tapdaq.sdk.TMBannerAdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/undo"
+        />
+
+    <LinearLayout
+        android:id="@+id/tapAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/adView"
+        android:orientation="horizontal">
+    </LinearLayout>
+<!--
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/undo"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_id">
+    </com.google.android.gms.ads.AdView> -->
+
+    <TextView
+        android:id="@+id/textV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adView"
+        android:layout_above="@id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/modeV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/levelV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/modeV"
+        android:layout_toEndOf="@id/modeV"
+        android:layout_toLeftOf="@id/settings"
+        android:layout_toStartOf="@id/settings"
+        android:textAlignment="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        />
+
+    <GridView
+        android:id="@+id/gridV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/settings"
+        android:layout_above="@id/tapAd"
+        android:numColumns="11"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/toHide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layoutAnimation="@anim/main_appear"
+        android:background="@drawable/backmenu">
+
+        <Button
+            android:id="@+id/instruc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/instruc"
+            android:layout_centerHorizontal="true"
+            android:textSize="50sp"
+            android:background="@drawable/btnmenu"/>
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/instruc"
+            android:text="@string/selection_menu"
+            android:layout_centerHorizontal="true"
+            android:textSize="50sp"
+            android:background="@drawable/btnmenu"/>
+        <Button
+            android:id="@+id/returnB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reset"
+            android:text="@string/returnB"
+            android:textSize="50sp"
+            android:background="@drawable/btnmenu"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="axxel.floodit">
+
+    <supports-screens android:smallScreens="false"
+        android:normalScreens="true"
+        android:largeScreens="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- Tapdaq -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Tapdaq Optional -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Chartboost -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- IronSource -->
+
+    <!-- Tapjoy -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:screenOrientation = "portrait"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:fullBackupContent="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:targetApi="lollipop">
+
+
+        <!-- AdActivity from Google Play Services, needed by Tappx -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name="com.tappx.sdk.android.TrackInstallReceiver"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="forward.GoogleAnalytics"
+                android:value="com.google.android.gms.tagmanager.InstallReferrerReceiver"/>
+            <meta-data
+                android:name="forward.SDK2"
+                android:value="com.sdk2.InstallBroadcastReceiver"/>
+
+        </receiver>
+
+        <!-- Debug Views -->
+        <activity android:name="com.tapdaq.sdk.TMTestActivity" />
+        <activity android:name="com.tapdaq.sdk.TMTestNativeActivity"/>
+
+        <!-- Cross Promo -->
+        <activity android:name="com.tapdaq.sdk.TMInterstitialActivity" />
+
+
+        <!-- More Apps -->
+        <activity android:name="com.tapdaq.sdk.TMMoreAppsActivity"/>
+
+
+        <!-- AdColony Adapter -->
+        <activity android:name="com.adcolony.sdk.AdColonyInterstitialActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="true"/>
+
+        <activity android:name="com.adcolony.sdk.AdColonyAdViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="true"/>
+
+        <!-- Applovin Adapter -->
+        <activity android:name="com.applovin.adview.AppLovinInterstitialActivity" />
+        <activity android:name="com.applovin.adview.AppLovinConfirmationActivity" />
+        <!-- Required for Chartboost -->
+        <activity
+            android:name="com.tapdaq.sdk.adnetworks.chartboost.CBWebActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <!-- IronSource -->
+        <activity
+            android:name="com.ironsource.sdk.controller.ControllerActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name="com.ironsource.sdk.controller.InterstitialActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.ironsource.sdk.controller.OpenUrlActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <!-- Tapjoy Adapter -->
+        <activity
+            android:name="com.tapjoy.TJAdUnitActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name="com.tapjoy.mraid.view.ActionHandler"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.tapjoy.mraid.view.Browser"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity
+            android:name="com.tapjoy.TJContentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- Required for UnityAds -->
+        <activity android:name="com.unity3d.ads.adunit.AdUnitActivity"/>
+        <activity android:name="com.unity3d.ads.adunit.AdUnitSoftwareActivity"/>
+
+        <activity android:name=".MainActivity"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>
